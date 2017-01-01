@@ -1,0 +1,59 @@
+// ==========================================================================
+// #c-buttons
+// ==========================================================================
+
+// $c-button-font-size: 16;
+// $c-button-primary : red;
+// $c-success: green;
+
+
+
+// $button-color: $primary !default;
+// $button-text-color: white !default;
+// $button-line-hright: 32 !default;
+// $button-border-radius: 3 !default;
+// $button-padding: 30 !default;
+// $button-font-size: 24 !default;
+// $button-weight: bold !default;
+
+
+// @mixing default-button ($color:
+// 	$button-text-color,
+// 	$line-height: $button-line-hright,
+// 	$radius: $button-border-radius,
+// 	$padding: $button-padding,
+// 	$font-size: $button-font-size.
+// 	$weight: $button-weight) {
+
+// 	color: $color;
+// 	line-height: em($button-line-height);
+// 	border-radius: em($button-radius);
+// 	padding: 0 em($button-padding);
+// 	font-size: em($button-font-size);
+// 	font-weight: $button-weight;
+// 	$:hover {
+// 		background-color: darken($color, 5%);
+// 	}
+// }
+
+// @mixin flat-button($color: $button-color) {
+// 	@include default-button;
+// 	background-color: $color; 
+// }
+
+
+// //button values
+// %default-button {
+// 	@include default-button;
+// }
+
+
+// .primary {
+// 	@extend %default-button;
+// 	@include flat-button($primary);
+// }
+
+// .secondary {
+// 	@extend %default-button;
+// 	@include flat-button($success);
+// }
