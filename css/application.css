@@ -1,3 +1,12 @@
+/*
+
+Brand color - #02b89a; //Green:
+Headlines,
+Buttons,
+
+Header - #585e69; //Light 
+
+*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -407,5 +416,23 @@ template {
  */
 [hidden] {
   display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #4A4A4A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic; }
 
 /*# sourceMappingURL=application.css.map */

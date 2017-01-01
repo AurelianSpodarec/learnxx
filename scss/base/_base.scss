@@ -1,20 +1,29 @@
 // ==========================================================================
 // #BASE
 // ==========================================================================
+body {
+	margin: 0;
+	padding: 0;
 
-  body {
-    margin: 0;
-    padding: 0;
+	background: $body__background;
 
-    background: $body-background;
+	font-family: $body__font-family;
+	font-weight: $global-weight-normal;
+	line-height: ($body__line/$body__font-size);
+	color: $body__color;
 
-    font-family: $body-font-family;
-    font-weight: $global-weight-normal;
-    line-height: $global-lineheight;
-    color: $body-font-color;
+	@if ($body__antialiased) {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+}
 
-    @if ($body-antialiased) {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-  }
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+}
