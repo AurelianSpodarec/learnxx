@@ -525,6 +525,9 @@ img {
   margin: 0;
   padding: 0; }
 
+.l-mainMenu--item {
+  display: inline-block; }
+
 .is-desktop-hide {
   display: block; }
   @media (min-width: 767px) {

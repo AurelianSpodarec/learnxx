@@ -10,3 +10,9 @@
 
 }
 
+.l-mainMenu {
+	@include m(item) {
+		display: inline-block;
+	}
+}
+
