@@ -14,16 +14,16 @@
 	    margin-bottom: 25px;
 
 	    &:after {
-		    // content: '';
-		    // display: block;
-		    // position: absolute;
-		    // margin-top: 2px;
-		    // height: 2px;
-		    // width: 100%;
-		    // -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
-		    // -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
-		    // box-shadow: inset 100px 0 0 -2px #02b89a;
-		    // background-color: #fff;
+		    content: '';
+		    display: block;
+		    position: absolute;
+		    margin-top: 2px;
+		    height: 2px;
+		    width: 90%;
+		    -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
+		    -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
+		    box-shadow: inset 100px 0 0 -2px #02b89a;
+		    background-color: #fff;
 		}
 
 	}
@@ -35,6 +35,16 @@
 	@include m(socialLinksMenu) {
 		@include e(item) {
 			display: inline-block;
+			margin-right: 5px;
+		    height: 38px;
+		    width: 38px;
+		    line-height: 42px;
+		    font-size: 1.25em;
+		    text-align: center;
+		    background-color: #dacdcd;
+		    a{
+		    	color: #585e69;
+			}
 		}
 	}
 
@@ -59,14 +69,29 @@
     }
 
     @include m(legalLinks) {
+
+ 		@include mq(medium-up) {
+ 			float: left;
+ 		}
+
     	@include e(item) {
     		display: inline-block;
+
+    		a {
+    			color: $brand-color;
+    			text-decoration: none;
+    			@include mq(medium-up) {
+    				padding-right: 10px;
+    			}
+    		}
+
     	}
     }
 
 	@include m(copyright) {
 		@include mq(medium-up) {
 			float: right;
+			color: red;
 		}
 	}
 
