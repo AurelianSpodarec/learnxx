@@ -18,6 +18,7 @@
                 $('img.c-mainNavigationPanel--logo').attr('src', 'assets/img/learnX__logo--white.png');
                 $(".c-mainNavigationPanel").addClass("is-active-mainNavigationPanel");
                 $(".btn--join").addClass('is-active-btnRoundSuccess');
+                $(".c-mainNavigationPanel--menuContainer").addClass("is-active-mainNavigationPanelMenuContainer");
 
 
           
@@ -26,6 +27,7 @@
                 $(".c-mainNavigationPanel__item").removeClass("is-active-siteLinks");
                 $(".c-mainNavigationPanel").removeClass("is-active-mainNavigationPanel");
                 $(".btn--join").removeClass('is-active-btnRoundSuccess');
+                $(".c-mainNavigationPanel--menuContainer").removeClass("is-active-mainNavigationPanelMenuContainer");
             }
 
         });
