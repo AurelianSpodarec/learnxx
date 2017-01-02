@@ -37,3 +37,36 @@ img {
 	height: auto;
 	-ms-interpolation-mode: bicubic;
 }
+
+
+
+// ==========================================================================
+// Typograhy
+// ==========================================================================
+
+@font-face{
+    src: url(../fonts/proximanova/proximanova-bold-webfont.ttf);
+    font-family: Proxima Nova;
+    font-weight: 700;
+}
+@font-face{
+    src: url(../fonts/proximanova/proximanova-regular-webfont.ttf);
+    font-family: Proxima Nova;
+}
+@font-face{
+    src: url(../fonts/proximanova/proximanova-light-webfont.ttf);
+    font-family: Proxima Nova;
+    font-weight: 300;
+}
+
+@font-face{
+    src: url(../fonts/proximanova/proximanova-regularitalic-webfont.ttf);
+    font-family: Proxima Nova;
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face{
+    src: url(../fonts/proximanova/proximanova-semibold-webfont.ttf);
+    font-family: Proxima Nova;
+    font-weight: 600;
+}
