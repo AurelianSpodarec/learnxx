@@ -477,7 +477,7 @@ img {
       padding-left: 15px; } }
   @media (min-width: 767px) {
     .l-container {
-      max-width: 1030px; } }
+      max-width: 1060px; } }
 
 .l-section-block {
   padding: 30px; }
@@ -619,7 +619,7 @@ img {
   transition: height 0.4s ease,background-color 0.2s ease; }
   @media (min-width: 767px) {
     .l-siteHeader {
-      padding-top: 25px; } }
+      padding-top: 33px; } }
 
 .l-mainMenu,
 .l-menu {
@@ -680,7 +680,7 @@ img {
   border: 1px solid #02B89A;
   border-radius: 16px;
   color: #02B89A !important;
-  padding: 8px 30px !important; }
+  padding: 7px 30px !important; }
 
 .c-primaryFooter {
   background-color: #585e69;
@@ -765,8 +765,11 @@ img {
         padding: 0; } }
   .c-mainNavigationPanel--logoContainer {
     float: left; }
+    @media (min-width: 767px) {
+      .c-mainNavigationPanel--logoContainer {
+        padding-bottom: 2px; } }
   .c-mainNavigationPanel--logo {
-    max-width: 155px;
+    max-width: 151px;
     height: auto; }
   .c-mainNavigationPanel--mobileMenuButton {
     float: right;
@@ -787,6 +790,7 @@ img {
         background-color: inherit;
         text-align: center;
         margin-left: 0;
+        margin-top: 2px;
         margin-right: 0;
         padding: 0;
         display: block; } }
