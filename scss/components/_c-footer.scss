@@ -4,7 +4,10 @@
 
 .c-primaryFooter {
 	background-color: #585e69;
-	padding: 50px 0 40px 0;
+	padding: 40px 0 20px 0;
+	@include mq(small-up) {
+		padding: 50px 0 40px 0;
+	}
 
 	@include m(heading) {
 		color: #efefef;
@@ -19,11 +22,15 @@
 		    position: absolute;
 		    margin-top: 2px;
 		    height: 2px;
-		    width: 90%;
+		    width: 100%;
 		    -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    box-shadow: inset 100px 0 0 -2px #02b89a;
 		    background-color: #fff;
+
+		    @include mq(medium-up) {
+		    	width: 90%;
+		    }
 		}
 
 
@@ -31,6 +38,7 @@
 
 	@include m(description) {
 		font-size: 14px;
+		color: #adadad;
 	}
 
 	@include m(socialLinksMenu) {
@@ -42,6 +50,7 @@
 		    line-height: 42px;
 		    font-size: 1.25em;
 		    text-align: center;
+		    margin-bottom: 10px;
 		    background-color: #dacdcd;
 		    a{
 		    	color: #585e69;
@@ -51,6 +60,10 @@
 
 	@include m(subscribeForm) {
 		display: block;
+	}
+
+	@include m(column) {
+		margin-bottom: 40px;
 	}
 
 }
@@ -77,7 +90,7 @@
 
     	@include e(item) {
     		display: inline-block;
-
+    		padding: 0 5px;
     		a {
     			color: $brand-color;
     			text-decoration: none;
@@ -93,7 +106,7 @@
 		@include mq(medium-up) {
 			float: right;
 			color: #adadad;
-			padding: 0 15px;
+			padding: 0 30px;
 		}
 	}
 

@@ -432,9 +432,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
+
+p {
+  margin-bottom: 10px; }
 
 img {
   display: inline-block;
@@ -497,6 +500,9 @@ img {
   background-color: #F4F4F4; }
 .bg--teri {
   background-color: #fff; }
+
+.l-siteFooter p {
+  color: #d2d1d1; }
 
 .l-grid {
   position: relative;
@@ -669,8 +675,11 @@ img {
 
 .btn--subscribe {
   background: #02B89A;
-  padding: 0px 5%;
-  padding: 9.5px 13px; }
+  background: #02B89A;
+  padding: 10.5px 17px;
+  margin-left: -1px;
+  float: left;
+  width: auto; }
   .btn--subscribe:hover {
     background: #029078; }
   .btn--subscribe:active {
@@ -684,7 +693,10 @@ img {
 
 .c-primaryFooter {
   background-color: #585e69;
-  padding: 50px 0 40px 0; }
+  padding: 40px 0 20px 0; }
+  @media (min-width: 580px) {
+    .c-primaryFooter {
+      padding: 50px 0 40px 0; } }
   .c-primaryFooter--heading {
     color: #efefef;
     font-family: Proxima Nova;
@@ -697,13 +709,17 @@ img {
       position: absolute;
       margin-top: 2px;
       height: 2px;
-      width: 90%;
+      width: 100%;
       -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
       -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
       box-shadow: inset 100px 0 0 -2px #02b89a;
       background-color: #fff; }
+      @media (min-width: 767px) {
+        .c-primaryFooter--heading:after {
+          width: 90%; } }
   .c-primaryFooter--description {
-    font-size: 14px; }
+    font-size: 14px;
+    color: #adadad; }
   .c-primaryFooter--socialLinksMenu__item {
     display: inline-block;
     margin-right: 5px;
@@ -712,11 +728,14 @@ img {
     line-height: 42px;
     font-size: 1.25em;
     text-align: center;
+    margin-bottom: 10px;
     background-color: #dacdcd; }
     .c-primaryFooter--socialLinksMenu__item a {
       color: #585e69; }
   .c-primaryFooter--subscribeForm {
     display: block; }
+  .c-primaryFooter--column {
+    margin-bottom: 40px; }
 
 .c-secondaryFooter {
   background-color: #3e4653;
@@ -732,7 +751,8 @@ img {
     .c-secondaryFooter--legalLinks {
       float: left; } }
   .c-secondaryFooter--legalLinks__item {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 5px; }
     .c-secondaryFooter--legalLinks__item a {
       color: #02B89A;
       text-decoration: none; }
@@ -743,7 +763,24 @@ img {
     .c-secondaryFooter--copyright {
       float: right;
       color: #adadad;
-      padding: 0 15px; } }
+      padding: 0 30px; } }
+
+.form-control, .form-control--left {
+  color: #666;
+  border: 1px solid #ccc;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 12px; }
+
+.form-control--left {
+  color: #666;
+  float: left; }
+
+.form-group {
+  width: auto; }
 
 .c-mainNavigationPanel {
   line-height: 2.4em; }
@@ -798,7 +835,8 @@ img {
     @media (min-width: 767px) {
       .c-mainNavigationPanel--menuAccount {
         display: block;
-        float: right; } }
+        float: right;
+        padding-right: 21px; } }
 
 @media (min-width: 767px) {
   .c-mainNavigationPanel__item, .c-mainNavigationPanel__item--active {
@@ -867,7 +905,7 @@ img {
   .is-active-mainNavigationPanel {
     padding: 7px 0; } }
 .is-active-mainNavigationPanelMenuContainer {
-  margin-top: 2px; }
+  margin-top: 1px; }
 .is-active-siteLinks a {
   color: white; }
 .is-active-btnRoundSuccess a {
