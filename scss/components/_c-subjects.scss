@@ -1,0 +1,49 @@
+// ==========================================================================
+// #Subjects
+// ==========================================================================
+
+.c-subject {
+
+	@include e(wrapper) {
+	    align-items: center;
+ 		flex-wrap: wrap;
+ 		display: flex;
+ 		justify-content: center;
+
+	    max-width: 590px;
+	    width: 100%;
+	    margin: 15px auto;
+	}
+
+	@include e(content) {	
+		&:nth-child(even) {
+		    align-self: flex-start;
+		}
+
+		&:nth-child(odd) {
+		    align-self: flex-end;
+		}
+	}
+
+	@include e(img) {
+		background-color: $brand-color;
+		border-radius: 50%;
+		border: solid 2px #fff;
+
+		webkit-box-shadow: 0 0 20px rgba(100,100,100, .4);
+	    box-shadow: 0 0 20px rgba(100,100,100, .4);
+
+	    width: 110px;
+	    height: 110px;
+	   
+	}
+
+	@include e(title) {
+		color: #02B89A;
+	    font-size: 18px;
+	    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+	    font-weight: bold;
+	    text-align: center;
+	}
+
+}

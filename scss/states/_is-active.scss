@@ -12,17 +12,28 @@
 	    padding: 10px 0;
 	    box-shadow: 0 0 21px -1px rgba(0, 0, 0, 0.48);
 	    padding: 0;
-	    a {
+	}
+
+	&mainNavigationPanel {
+		@include mq(medium-up) {
+	    	padding: 7px 0;
+		}
+	}
+
+
+
+	&siteLinks {
+		a {
 			color: white;
 		}
 	}
 
-	&mainNavigationPanel {
-	    padding: 5px 0;
-	}
+	&btnRoundSuccess {
+		a {
 
-	&menusWrapper {
-		margin-top: 5px;
+			background-color: $brand-color;	
+			color: white!important;
+		}
 	}
 }
 

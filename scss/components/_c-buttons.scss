@@ -57,3 +57,60 @@
 // 	@extend %default-button;
 // 	@include flat-button($success);
 // }
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+%btn {
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+    font-weight: 700;
+}
+
+.btn--primary {
+	@extend %btn;
+	@include button-bg($brand-color);
+}
+
+.btn--blue {
+	@extend %btn;
+	@include button-bg(#3498db);
+}
+
+.btn--yellow{
+	@extend %btn;
+	@include button-bg(#f1c40f);
+}
+
+.btn--red {
+	@extend %btn;
+	@include button-bg(#e74c3c);
+}
+
+.btn--subscribe {
+	@extend %btn;
+	@include button-bg($brand-color);
+    padding: 0px 5%;
+    padding: 9.5px 13px;
+}
+
+.btn--join {
+
+	a {
+		border: 1px solid $brand-color;
+		border-radius: 16px;
+		color: $brand-color!important;
+		padding: 8px 30px !important
+	}
+}

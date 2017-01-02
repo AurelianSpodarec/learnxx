@@ -22,3 +22,35 @@
 		max-width: 1030px;
 	}
 }
+
+.l-section-block {
+	padding: 30px;
+	@include mq(small-up) {
+		padding: 48px;
+	}
+	@include mq(medium-up) {
+		padding: 60px 0;
+	}
+}
+
+.l-align-center {
+	text-align: center;
+}
+
+// Background
+
+.bg {
+
+	@include m(prim) {
+		background-color: $brand-color;
+	}
+
+	@include m(sec) {
+		background-color: $wild-sand;
+	}
+
+	@include m(teri) {
+		background-color: $white;
+	}
+
+}

@@ -1,0 +1,63 @@
+// ==========================================================================
+// #Extends
+// ==========================================================================
+
+// Nav Items
+
+%nav-block {
+	display: block;
+	background-color: #585e69;
+	@include mq(medium-up) {
+		background-color: rgba(#FFF, 0);
+		text-align: center;
+	}	
+}
+
+%nav-navigation {
+  margin: 0 -15px;
+  padding-top: 15px;
+  display: none;
+  @include mq(medium-up) {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+%nav-list {
+	color: #515e65;
+	@include mq(medium-up) {
+		  display: inline-block;
+	}
+}
+
+%nav-item {
+	@include mq(medium-up) {
+		display: inline-block;
+	}
+}
+
+%nav-link {
+	  color: #efefef;
+    padding: 10px 14px;
+    font-weight: bold;    
+    font-family: $font-family--primary;
+    font-weight: 600;
+    font-size: 14px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    @include mq(medium-up) {
+    	color: #434343;
+    	padding: 10px 14px;
+      display: inline;
+    }
+}
+
+%nav-item-on {
+	color: #02b89a;
+}
+
+
+
+

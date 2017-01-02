@@ -14,17 +14,18 @@
 
             if($(window).scrollTop() > 50) {
                 $(".l-siteHeader").addClass("is-active-siteHeader");
-                $(".c-mainNavigationPanel--item").addClass("is-active-siteLinks");
+                $(".c-mainNavigationPanel__item").addClass("is-active-siteLinks");
                 $('img.c-mainNavigationPanel--logo').attr('src', 'assets/img/learnX__logo--white.png');
-                $(".c-mainNavigationPanel--menusWrapper").addClass("is-active-menusWrapper");
                 $(".c-mainNavigationPanel").addClass("is-active-mainNavigationPanel");
+                $(".btn--join").addClass('is-active-btnRoundSuccess');
+
 
           
             } else {
                 $(".l-siteHeader").removeClass("is-active-siteHeader");
-                $(".c-mainNavigationPanel--item").removeClass("is-active-siteLinks");
-                $(".c-mainNavigationPanel--menusWrapper").removeClass("is-active-menusWrapper");
+                $(".c-mainNavigationPanel__item").removeClass("is-active-siteLinks");
                 $(".c-mainNavigationPanel").removeClass("is-active-mainNavigationPanel");
+                $(".btn--join").removeClass('is-active-btnRoundSuccess');
             }
 
         });

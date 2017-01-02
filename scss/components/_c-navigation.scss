@@ -32,7 +32,7 @@
 	}
 
 	@include m(logo) {
-		max-width: 160px;
+		max-width: 155px;
     	height: auto;
 	}
 
@@ -46,11 +46,7 @@
     	}
 	}
 
-	@include m(menusWrapper) {
-		@include mq(medium-up) {
-			margin-top: 10px;
-		}
-	}
+
 
 	@include m(menuContainer) {
 		background-color: #585e69;
@@ -68,37 +64,31 @@
 		}
 	}
 
-	@include m(item) {
+	@include e(item) {
+		@extend %nav-item;
 		a {
-			color: #efefef;
-		    padding: 7px 13px;
-		    font-family: $font-family--primary;
-		    font-weight: 600;
-		    font-size: 14px;
-		    vertical-align: middle;
-		    text-decoration: none;
-		    text-transform: uppercase;
-		    display: block;
-		    &:hover {
-		    	color: $brand-color;
-		    }
-		}
-		@include mq(medium-up) {
-			display: inline-block;
-			a {
-				color: #434343;
-				padding:0 13px;
-				font-size: 14px;
+			@extend %nav-link;
+			&:hover {
+				@extend %nav-item-on;
 			}
 		}
-	}
+
+		@include m(active) {
+			@extend %nav-item;
+
+			a{
+				@extend %nav-link;
+				@extend %nav-item-on;
+			}
+		}
+		}
+
 
 	@include m(menuAccount) {
 		display: none;
 		@include mq(medium-up) {
     		display: block;
     		float: right;
-    	
     	}
 	}
 
