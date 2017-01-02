@@ -19,12 +19,13 @@
 		    position: absolute;
 		    margin-top: 2px;
 		    height: 2px;
-		    width: 90%;
+		    width: 95%;
 		    -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    box-shadow: inset 100px 0 0 -2px #02b89a;
 		    background-color: #fff;
-		}
+		}
+
 
 	}
 
@@ -91,7 +92,8 @@
 	@include m(copyright) {
 		@include mq(medium-up) {
 			float: right;
-			color: red;
+			color: #adadad;
+			padding: 0 15px;
 		}
 	}
 
