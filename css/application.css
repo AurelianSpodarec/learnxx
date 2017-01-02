@@ -435,4 +435,100 @@ img {
   height: auto;
   -ms-interpolation-mode: bicubic; }
 
+.c-primaryFooter {
+  background-color: #585e69;
+  padding: 50px 0 40px 0; }
+  .c-primaryFooter--heading {
+    color: #efefef;
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 25px; }
+  .c-primaryFooter--description {
+    font-size: 14px; }
+  .c-primaryFooter--socialLinksMenu__item {
+    display: inline-block; }
+  .c-primaryFooter--subscribeForm {
+    display: block; }
+
+.c-secondaryFooter {
+  background-color: #3e4653;
+  padding: 23px 0;
+  text-align: center; }
+  @media (min-width: 767px) {
+    .c-secondaryFooter {
+      text-align: inherit; } }
+  @media (min-width: 767px) {
+    .c-secondaryFooter--legalLinksWrapper {
+      float: left; } }
+  .c-secondaryFooter--legalLinks__item {
+    display: inline-block; }
+  @media (min-width: 767px) {
+    .c-secondaryFooter--copyright {
+      float: right; } }
+
+.c-mainNavigationPanel--header {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%; }
+  @media (min-width: 767px) {
+    .c-mainNavigationPanel--header {
+      clear: none;
+      width: auto;
+      display: inline-block; } }
+.c-mainNavigationPanel--logoContainer {
+  float: left; }
+.c-mainNavigationPanel--logo {
+  max-width: 160px;
+  height: auto; }
+.c-mainNavigationPanel--mobileMenuButton {
+  float: right; }
+  @media (min-width: 767px) {
+    .c-mainNavigationPanel--mobileMenuButton {
+      display: none; } }
+@media (min-width: 767px) {
+  .c-mainNavigationPanel--menuContainer {
+    text-align: center; } }
+@media (min-width: 767px) {
+  .c-mainNavigationPanel--item {
+    display: inline-block; } }
+.c-mainNavigationPanel--menuAccount {
+  display: none; }
+  @media (min-width: 767px) {
+    .c-mainNavigationPanel--menuAccount {
+      display: block;
+      float: right; } }
+
+.l-clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.l-container {
+  margin: 0 15px; }
+  @media (min-width: 580px) {
+    .l-container {
+      margin: 0 auto;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 767px) {
+    .l-container {
+      max-width: 1060px; } }
+
+.l-siteHeader {
+  background-color: #f4f4f4; }
+
+.l-mainMenu,
+.l-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.is-desktop-hide {
+  display: block; }
+  @media (min-width: 767px) {
+    .is-desktop-hide {
+      display: none; } }
+
 /*# sourceMappingURL=application.css.map */

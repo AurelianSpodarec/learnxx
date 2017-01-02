@@ -1,3 +1,59 @@
 // ==========================================================================
 // #c-navigation
 // ==========================================================================
+
+.c-mainNavigationPanel {
+
+	@include m(header) {
+		content: "";
+	    display: table;
+	    clear: both;
+	    width: 100%;
+		@include mq(medium-up) {
+    		clear: none;
+    		width: auto;
+    	    display: inline-block;
+    	}
+	}
+
+	@include m(logoContainer) {
+		float: left;
+    	@include mq(medium-up) {
+    		
+    	}
+	}
+
+	@include m(logo) {
+		max-width: 160px;
+    	height: auto;
+	}
+
+	@include m(mobileMenuButton) {
+		float: right;
+		@include mq(medium-up) {
+    		display: none;
+    	}
+	}
+
+	@include m(menuContainer) {
+		@include mq(medium-up) {
+			text-align: center
+		}
+	}
+
+	@include m(item) {
+		
+		@include mq(medium-up) {
+			display: inline-block;
+		}
+	}
+
+	@include m(menuAccount) {
+		display: none;
+		@include mq(medium-up) {
+    		display: block;
+    		float: right;
+    	}
+	}
+
+}

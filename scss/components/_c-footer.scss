@@ -1,3 +1,73 @@
 // ==========================================================================
 // #c-footer
 // ==========================================================================
+
+.c-primaryFooter {
+	background-color: #585e69;
+	padding: 50px 0 40px 0;
+
+	@include m(heading) {
+		color: #efefef;
+	    font-family: Proxima Nova;
+	    font-size: 20px;
+	    font-weight: 300;
+	    margin-bottom: 25px;
+
+	    &:after {
+		    // content: '';
+		    // display: block;
+		    // position: absolute;
+		    // margin-top: 2px;
+		    // height: 2px;
+		    // width: 100%;
+		    // -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
+		    // -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
+		    // box-shadow: inset 100px 0 0 -2px #02b89a;
+		    // background-color: #fff;
+		}
+
+	}
+
+	@include m(description) {
+		font-size: 14px;
+	}
+
+	@include m(socialLinksMenu) {
+		@include e(item) {
+			display: inline-block;
+		}
+	}
+
+	@include m(subscribeForm) {
+		display: block;
+	}
+
+}
+
+.c-secondaryFooter {
+	background-color: #3e4653;
+    padding: 23px 0;
+    text-align: center;
+    @include mq(medium-up) {
+    	text-align: inherit;
+    }
+
+    @include m(legalLinksWrapper) {
+    	@include mq(medium-up) {
+			float: left;
+		}
+    }
+
+    @include m(legalLinks) {
+    	@include e(item) {
+    		display: inline-block;
+    	}
+    }
+
+	@include m(copyright) {
+		@include mq(medium-up) {
+			float: right;
+		}
+	}
+
+}

@@ -1,3 +1,78 @@
 // ==========================================================================
 // Mixins
 // ==========================================================================
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Media queries
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == "xs-up" {
+    @media (min-width: 580px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "xs-only" {
+    @media (min-width: 1px) and (max-width: 580px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "small" {
+    @media (min-width: 580px) and (max-width: 767px){
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "small-below" {
+     @media (max-width: 580px){
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "small-up" {
+     @media (min-width: 580px){
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium-up" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+
+   @else if $breakpoint == "medium" {
+    @media (min-width: 767px) and (max-width: 1100px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium-below" {
+    @media (max-width: 767px){
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large-up" {
+    @media (min-width: 1100px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large-below" {
+    @media (max-width: 1100px){
+      @content;
+    }
+  }
+}
