@@ -467,38 +467,72 @@ img {
     .c-secondaryFooter--copyright {
       float: right; } }
 
-.c-mainNavigationPanel--header {
-  content: "";
-  display: table;
-  clear: both;
-  width: 100%; }
+.c-mainNavigationPanel {
+  line-height: 2.4em; }
   @media (min-width: 767px) {
-    .c-mainNavigationPanel--header {
-      clear: none;
-      width: auto;
-      display: inline-block; } }
-.c-mainNavigationPanel--logoContainer {
-  float: left; }
-.c-mainNavigationPanel--logo {
-  max-width: 160px;
-  height: auto; }
-.c-mainNavigationPanel--mobileMenuButton {
-  float: right; }
-  @media (min-width: 767px) {
-    .c-mainNavigationPanel--mobileMenuButton {
-      display: none; } }
-@media (min-width: 767px) {
+    .c-mainNavigationPanel {
+      padding: 10px 0; } }
+  .c-mainNavigationPanel--header {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    padding: 5px 0; }
+    @media (min-width: 767px) {
+      .c-mainNavigationPanel--header {
+        clear: none;
+        width: auto;
+        display: inline-block;
+        float: left; } }
+  .c-mainNavigationPanel--logoContainer {
+    float: left; }
+  .c-mainNavigationPanel--logo {
+    max-width: 160px;
+    height: auto; }
+  .c-mainNavigationPanel--mobileMenuButton {
+    float: right;
+    color: #02b89a;
+    font-size: 32px;
+    cursor: pointer; }
+    @media (min-width: 767px) {
+      .c-mainNavigationPanel--mobileMenuButton {
+        display: none; } }
   .c-mainNavigationPanel--menuContainer {
-    text-align: center; } }
-@media (min-width: 767px) {
-  .c-mainNavigationPanel--item {
-    display: inline-block; } }
-.c-mainNavigationPanel--menuAccount {
-  display: none; }
+    background-color: #585e69;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px 0; }
+    @media (min-width: 767px) {
+      .c-mainNavigationPanel--menuContainer {
+        background-color: inherit;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0; } }
+  .c-mainNavigationPanel--item a {
+    color: #efefef;
+    padding: 7px 13px;
+    font-weight: bold;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block; }
+    .c-mainNavigationPanel--item a:hover {
+      color: #02B89A; }
   @media (min-width: 767px) {
-    .c-mainNavigationPanel--menuAccount {
-      display: block;
-      float: right; } }
+    .c-mainNavigationPanel--item {
+      display: inline-block; }
+      .c-mainNavigationPanel--item a {
+        color: #434343;
+        padding: 0 13px; } }
+  .c-mainNavigationPanel--menuAccount {
+    display: none; }
+    @media (min-width: 767px) {
+      .c-mainNavigationPanel--menuAccount {
+        display: block;
+        float: right; } }
 
 .l-clearfix:after {
   content: "";
