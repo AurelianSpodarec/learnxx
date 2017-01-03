@@ -41,7 +41,8 @@
 	@include m(mobileMenuButton) {
 		float: right;
 		color: #02b89a;
-	    font-size: 32px;
+	    margin-top: 6px;
+    	font-size: 33px;
 	    cursor: pointer;
 		@include mq(medium-up) {
     		display: none;
@@ -54,7 +55,7 @@
 		background-color: #585e69;
 	    margin-left: -30px;
 	    margin-right: -30px;
-		padding: 20px 0;
+		padding: 0 15px;
 		display: none;
 		@include mq(medium-up) {
 			background-color: inherit;
