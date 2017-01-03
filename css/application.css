@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6, p {
 img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic; }
 
@@ -660,13 +660,13 @@ img {
       padding: 3px;
       font-size: 14px; }
 
-.btn--primary, .btn--blue, .btn--subscribe, .btn--contact {
+.btn--primary, .btn--success, .btn--subscribe, .btn--contact {
   color: white;
   padding: 5px 10px;
   text-align: center;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none; }
 
@@ -677,12 +677,17 @@ img {
   .btn--primary:active {
     background: #013a30; }
 
-.btn--blue {
-  background: #3498db; }
-  .btn--blue:hover {
-    background: #2383c4; }
-  .btn--blue:active {
-    background: #16527a; }
+.btn--success {
+  background: #02B89A;
+  font-size: 1em;
+  border: 1px solid #02B89A;
+  border-radius: 16px;
+  color: white;
+  padding: 5px 30px; }
+  .btn--success:hover {
+    background: #029078; }
+  .btn--success:active {
+    background: #013a30; }
 
 .btn--block {
   width: 100%; }
@@ -690,7 +695,7 @@ img {
 .btn--subscribe {
   background: #02B89A;
   background: #02B89A;
-  padding: 10.5px 17px;
+  padding: 9.2px 12px;
   margin-left: -1px;
   float: left;
   width: auto; }
@@ -740,14 +745,11 @@ img {
       position: absolute;
       margin-top: 2px;
       height: 2px;
-      width: 100%;
+      width: 90%;
       -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
       -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
       box-shadow: inset 100px 0 0 -2px #02b89a;
       background-color: #fff; }
-      @media (min-width: 767px) {
-        .c-primaryFooter--heading:after {
-          width: 90%; } }
   .c-primaryFooter--description {
     font-size: 14px;
     color: #adadad;
@@ -778,7 +780,9 @@ img {
       text-align: inherit; } }
   @media (min-width: 767px) {
     .c-secondaryFooter--legalLinksWrapper {
-      float: left; } }
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (min-width: 767px) {
     .c-secondaryFooter--legalLinks {
       float: left; } }
@@ -798,7 +802,7 @@ img {
     .c-secondaryFooter--copyright {
       float: right;
       color: #adadad;
-      padding: 0 10px; } }
+      padding: 0 20px; } }
 
 .form-control, .form-control--left {
   color: #666;
@@ -856,10 +860,13 @@ img {
         font-size: inherit; } }
 
 .c-mainNavigationPanel {
-  line-height: 2.4em; }
+  line-height: 2.4em;
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (min-width: 767px) {
     .c-mainNavigationPanel {
-      padding: 10px 0; } }
+      padding-top: 10px;
+      padding-bottom: 10px; } }
   .c-mainNavigationPanel--header {
     content: "";
     display: table;
@@ -1002,6 +1009,45 @@ img {
 .c-faq__category-title {
   font-size: 1.75em; }
 
+.c-blogPostCard {
+  border-bottom: 1px solid #CCC;
+  padding: 40px 0; }
+  .c-blogPostCard__imgWrap {
+    max-height: 300px;
+    overflow: hidden;
+    position: relative; }
+    @media (min-width: 767px) {
+      .c-blogPostCard__imgWrap {
+        float: left;
+        max-width: 400px;
+        max-height: 227px;
+        width: 37%; } }
+  @media (min-width: 767px) {
+    .c-blogPostCard__img {
+      background: center center;
+      background-attachment: cover; } }
+  @media (min-width: 767px) {
+    .c-blogPostCard__content {
+      float: left;
+      width: 63%;
+      padding-left: 40px; } }
+  .c-blogPostCard__description {
+    padding: 10px 0 12px 0; }
+
+.c-blogPost__imgWrap {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 767px) {
+    .c-blogPost__imgWrap {
+      background-size: cover;
+      width: 100%;
+      background: center center; } }
+@media (min-width: 767px) {
+  .c-blogPost__img {
+    background: center center;
+    background-size: cover; } }
+
 .is-desktop-hide {
   display: block; }
   @media (min-width: 767px) {
@@ -1017,7 +1063,8 @@ img {
   padding: 0; }
 @media (min-width: 767px) {
   .is-active-mainNavigationPanel {
-    padding: 7px 0; } }
+    padding-top: 7px;
+    padding-bottom: 7px; } }
 .is-active-mainNavigationPanelMenuContainer {
   margin-top: 1px; }
 .is-active-siteLinks a {

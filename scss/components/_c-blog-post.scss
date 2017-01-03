@@ -1,0 +1,85 @@
+// ==========================================================================
+// #c-blog-post
+// ==========================================================================
+
+// Blog Post Card
+.c-blogPostCard {
+	border-bottom: 1px solid #CCC;
+	padding: 40px 0; 
+
+
+	@include e(imgWrap) {
+		max-height: 300px;
+		overflow: hidden;
+    	position: relative;
+		@include mq(medium-up) {
+			float: left;
+			max-width: 400px;
+			max-height: 227px;
+			width: 37%;    
+		}
+	}
+
+	@include e(img) {
+		@include mq(medium-up) {
+			background: center center;
+			background-attachment: cover;
+		}
+	}
+
+	@include e(content) {
+		@include mq(medium-up) {
+			float: left;
+			width: 63%;
+			padding-left: 40px;
+		}
+	}
+
+	@include e(header) {
+		
+	}
+
+	@include e(info) {
+		
+	}
+
+	@include e(body) {
+		
+	}
+
+	@include e(title) {
+		
+	}
+
+	@include e(description) {
+		padding: 10px 0 12px 0;
+	}
+
+
+}
+
+//Blog Post
+
+.c-blogPost {
+
+	@include e(imgWrap) {
+		max-height: 300px;
+		overflow: hidden;
+    	position: relative;
+		@include mq(medium-up) {
+			background-size: cover;
+			    width: 100%;
+				
+			    background: center center;
+
+		}
+	}
+
+	@include e(img) {
+		@include mq(medium-up) {
+			background: center center;
+			background-size: cover;
+		}
+	}
+
+}

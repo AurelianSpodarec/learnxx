@@ -16,7 +16,8 @@
 
 	&mainNavigationPanel {
 		@include mq(medium-up) {
-	    	padding: 7px 0;
+	    	padding-top: 7px;
+	    	padding-bottom: 7px;
 		}
 	}
 

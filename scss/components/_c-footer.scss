@@ -22,15 +22,12 @@
 		    position: absolute;
 		    margin-top: 2px;
 		    height: 2px;
-		    width: 100%;
+		    width: 90%;
 		    -webkit-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    -moz-box-shadow: inset 100px 0 0 -2px #02b89a;
 		    box-shadow: inset 100px 0 0 -2px #02b89a;
 		    background-color: #fff;
 
-		    @include mq(medium-up) {
-		    	width: 90%;
-		    }
 		}
 
 
@@ -80,6 +77,8 @@
     @include m(legalLinksWrapper) {
     	@include mq(medium-up) {
 			float: left;
+				padding-left: 15px;
+	padding-right: 15px;
 		}
     }
 
@@ -111,7 +110,7 @@
 		@include mq(medium-up) {
 			float: right;
 			color: #adadad;
-			padding: 0 10px;
+			padding: 0 20px;
 		}
 	}
 

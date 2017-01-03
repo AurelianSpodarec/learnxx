@@ -74,7 +74,7 @@
 	text-align: center;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 14px;
     font-weight: 700;
     text-decoration: none;
 }
@@ -84,9 +84,14 @@
 	@include button-bg($brand-color);
 }
 
-.btn--blue {
-	@extend %btn;
-	@include button-bg(#3498db);
+.btn--success {
+  @extend %btn;
+    @include button-bg($brand-color);
+    font-size: 1em;
+    border: 1px solid #02B89A;
+    border-radius: 16px;
+    color: white;
+    padding: 5px 30px;
 }
 
 .btn--block {
@@ -98,10 +103,10 @@
 	@extend %btn;
 	@include button-bg($brand-color);
     background: #02B89A;
-    padding: 10.5px 17px;
+    padding: 9.2px 12px;
     margin-left: -1px;
     float: left;
-	width: auto;
+	  width: auto;
 }
 
 .btn--contact {
