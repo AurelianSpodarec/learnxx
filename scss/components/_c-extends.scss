@@ -48,7 +48,7 @@
     display: block;
     @include mq(medium-up) {
     	color: #434343;
-    	padding: 10px 14px;
+    	padding: 0 0 0 20px;
       display: inline;
     }
 }

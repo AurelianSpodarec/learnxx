@@ -498,6 +498,18 @@ img {
 .bg--teri {
   background-color: #fff; }
 
+@media (min-width: 580px) {
+  .l-align-wrap {
+    display: flex; } }
+
+@media (min-width: 580px) {
+  .l-center {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); } }
+
 .l-siteFooter p {
   color: #d2d1d1; }
 
@@ -898,8 +910,8 @@ img {
         display: none; } }
   .c-mainNavigationPanel--menuContainer {
     background-color: #585e69;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -30px;
+    margin-right: -30px;
     padding: 20px 0;
     display: none; }
     @media (min-width: 767px) {
@@ -934,7 +946,7 @@ img {
   @media (min-width: 767px) {
     .c-mainNavigationPanel__item a, .c-mainNavigationPanel__item--active a {
       color: #434343;
-      padding: 10px 14px;
+      padding: 0 0 0 20px;
       display: inline; } }
 
 .c-mainNavigationPanel__item a:hover, .c-mainNavigationPanel__item--active a {
@@ -1048,11 +1060,46 @@ img {
     background: center center;
     background-size: cover; } }
 
+.c-downoladAppSection__learnX {
+  text-align: center; }
+  @media (min-width: 767px) {
+    .c-downoladAppSection__learnX {
+      text-align: left;
+      margin-top: 50px;
+      margin-left: 60px; } }
+.c-downoladAppSection__learnX-heading {
+  font-size: 3.0625em;
+  color: #02B89A;
+  text-transform: uppercase; }
+  @media (min-width: 767px) {
+    .c-downoladAppSection__learnX-heading {
+      font-size: 3.0625em;
+      color: #02B89A; } }
+.c-downoladAppSection__learnX-desc {
+  margin-bottom: 10px;
+  color: #adadad; }
+.c-downoladAppSection__mobile {
+  max-width: 200px;
+  margin-left: 120px; }
+.c-downoladAppSection__heading-desc {
+  font-weight: 700;
+  color: #efefef;
+  padding-bottom: 13px;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 50%; }
+
 .is-desktop-hide {
   display: block; }
   @media (min-width: 767px) {
     .is-desktop-hide {
       display: none; } }
+
+.is-tabletBelow--hide {
+  display: none; }
+  @media (min-width: 767px) {
+    .is-tabletBelow--hide {
+      display: block; } }
 
 .is-active-siteHeader {
   background: #585e69;

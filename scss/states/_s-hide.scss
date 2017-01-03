@@ -8,3 +8,14 @@
 		display: none;
 	}
 }
+
+.is-tabletBelow {
+
+	@include m(hide) {
+		display: none;
+		@include mq(medium-up) {
+			display: block;
+		}
+	}
+
+}

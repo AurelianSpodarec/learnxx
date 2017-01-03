@@ -1,0 +1,46 @@
+// ==========================================================================
+// c-downolad-app-section
+// ==========================================================================
+
+.c-downoladAppSection {
+
+	@include e(learnX) {
+		text-align: center;
+
+		@include mq(medium-up) {
+			text-align: left;
+			margin-top: 50px;
+			margin-left: 60px;
+		}
+	}
+
+	@include e(learnX-heading) {
+		font-size: 3.0625em;
+	    color: #02B89A;
+	    text-transform: uppercase;
+	    @include mq(medium-up) {
+			font-size: 3.0625em;
+    		color: #02B89A;
+    	}
+	}
+
+	@include e(learnX-desc) {
+		margin-bottom: 10px;
+    	color: #adadad;
+	}
+
+	@include e(mobile) {
+		max-width: 200px;
+    	margin-left: 120px;
+	}
+
+	@include e(heading-desc) {
+		font-weight: 700;
+	    color: #efefef;
+	    padding-bottom: 13px;
+	    font-size: 20px;
+	    margin: 0 auto;	width: 50%;
+	}
+
+}
+

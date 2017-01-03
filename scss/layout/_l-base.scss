@@ -54,3 +54,19 @@
 	}
 
 }
+
+.l-align-wrap {
+	@include mq(small-up) {
+    	display: flex;
+	}
+}
+
+.l-center {
+	@include mq(small-up) {
+    	align-items: center;
+    	justify-content: center;
+    	position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
