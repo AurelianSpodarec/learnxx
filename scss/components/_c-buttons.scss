@@ -127,7 +127,7 @@
 
 
 .btn--join {
-
+    
 	a {
 		border: 1px solid $brand-color;
 		border-radius: 16px;
@@ -135,4 +135,11 @@
 		padding: 7px 30px !important
 	}
 
+}
+
+.btn--jobsPage-apply {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
 }

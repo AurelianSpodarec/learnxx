@@ -443,6 +443,9 @@ img {
   height: auto;
   -ms-interpolation-mode: bicubic; }
 
+a {
+  text-decoration: none; }
+
 @font-face {
   src: url(../fonts/proximanova/proximanova-bold-webfont.ttf);
   font-family: Proxima Nova;
@@ -739,6 +742,12 @@ img {
   color: #02B89A !important;
   padding: 7px 30px !important; }
 
+.btn--jobsPage-apply {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right; }
+
 .c-primaryFooter {
   background-color: #585e69;
   padding: 40px 0 20px 0; }
@@ -848,6 +857,7 @@ img {
 
 .c-landing-page {
   text-align: center;
+  position: relative;
   padding: 32px 0 41px 0; }
   @media (min-width: 767px) {
     .c-landing-page {
@@ -1089,6 +1099,9 @@ img {
   font-size: 20px;
   margin: 0 auto;
   width: 50%; }
+
+.c-jobsPage__postCategories__link {
+  display: inline-block; }
 
 .is-desktop-hide {
   display: block; }
