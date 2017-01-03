@@ -39,6 +39,7 @@
 	@include m(description) {
 		font-size: 14px;
 		color: #adadad;
+		margin-bottom: 10px;
 	}
 
 	@include m(socialLinksMenu) {
@@ -70,7 +71,7 @@
 
 .c-secondaryFooter {
 	background-color: #3e4653;
-    padding: 23px 0;
+    padding: 18px 0 23px 0;
     text-align: center;
     @include mq(medium-up) {
     	text-align: inherit;
@@ -91,22 +92,26 @@
     	@include e(item) {
     		display: inline-block;
     		padding: 0 5px;
-    		a {
-    			color: $brand-color;
-    			text-decoration: none;
+
+    		    @include mq(small-up) {
+    				padding: 0 5px 0
+    			}
     			@include mq(medium-up) {
-    				padding-right: 10px;
+    				padding:0 7px 0 0;
     			}
     		}
 
-    	}
+	    	a {
+	    		color: $brand-color;
+	    		text-decoration: none;
+	    	}
     }
 
 	@include m(copyright) {
 		@include mq(medium-up) {
 			float: right;
 			color: #adadad;
-			padding: 0 30px;
+			padding: 0 10px;
 		}
 	}
 

@@ -1,0 +1,46 @@
+// ==========================================================================
+// #FAQ
+// ==========================================================================
+
+.c-faq {
+
+	//Questions
+	@include e(category-question) {
+		margin-bottom: 20px;
+	}
+
+	@include e(question) {
+
+	}
+
+
+	//Answers
+	@include e(answers) {
+		
+	}
+
+	@include e(category-section) {
+		margin: 40px 0;
+	}
+
+	@include e(answer) {
+		margin: 0 0 13px 0;
+		border-bottom: 1px solid #ececec;
+		padding: 15px 0;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	@include e(category-title) {
+    	font-size: 1.75em;
+	}
+
+	@include e(title) {
+		
+	}
+
+
+
+
+}

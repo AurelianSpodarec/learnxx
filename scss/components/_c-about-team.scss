@@ -1,3 +1,46 @@
 // ==========================================================================
 // #c-about-team
 // ==========================================================================
+
+.c-aboutTeam {
+	text-align: center;
+	margin-bottom: 30px;
+	@include e(picture) {
+		border-radius: 50%;
+		width: 160px;
+    	height: 160px;
+
+	}
+
+	@include e(name) {
+		font-size: 25px;
+		font-weight: 100;
+		margin-top: 11px;
+		color: #000;
+	}
+
+	@include e(role) {
+		font-size: 15px;
+	    font-weight: 100;
+	    color: #999;
+	    margin-bottom: 5px;
+	}
+
+	@include e(socialIcons) {
+		display: inline-block;
+	}
+
+	@include e(socialIcons) {
+		display: inline-block;
+		margin:0 2px;
+		.fa {
+			color: #FFF;
+			background-color: #333333;
+			border-radius: 50%;
+			padding: 3px;
+			font-size: 14px;
+		}
+	}
+
+
+}

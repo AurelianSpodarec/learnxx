@@ -21,7 +21,25 @@
     	float: left;
     }
 
+    @include m(contact) {
+        padding: 15px 12px;
+        width: 100%;
+        font-size: 15px;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        background-color: #efefef;
+        font-family: Proxima Nova;
+        font-weight: 300;
+        margin: 18px 0;
+    }
+
+    @include m(textarea) {
+        height: 112px;
+    }
+
 }
+
 
 .form-group {
 	width: auto;

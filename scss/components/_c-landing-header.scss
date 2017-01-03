@@ -1,3 +1,36 @@
 // ==========================================================================
 // #c-landing-header
 // ==========================================================================
+
+.c-landing-page {
+	text-align: center;
+	//margin-bottom: 40px;
+	padding: 32px 0 41px 0;
+
+	@include mq(medium-up) {
+		padding-top: 55px;
+		padding-bottom: 85px;
+	}
+
+	@include e(header) {
+		color: $brand-color;
+		font-size: 29px;
+		text-transform: uppercase;
+		@include mq(small-up) {
+			font-size: 34px;
+		}
+		@include mq(medium-up) {
+			font-size: 38px;
+		}
+	}
+
+	@include e(sub-header) {
+		color: #8e8e8e;
+		font-weight: 300;
+		font-size: 14px;
+		@include mq(small-up) {
+			font-size: inherit;
+		}
+	}
+
+}

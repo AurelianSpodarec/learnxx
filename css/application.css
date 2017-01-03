@@ -432,12 +432,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
-
-p {
-  margin-bottom: 10px; }
 
 img {
   display: inline-block;
@@ -483,10 +480,10 @@ img {
       max-width: 1060px; } }
 
 .l-section-block {
-  padding: 30px; }
+  padding: 30px 0; }
   @media (min-width: 580px) {
     .l-section-block {
-      padding: 48px; } }
+      padding: 48px 0; } }
   @media (min-width: 767px) {
     .l-section-block {
       padding: 60px 0; } }
@@ -505,9 +502,7 @@ img {
   color: #d2d1d1; }
 
 .l-grid {
-  position: relative;
-  margin-right: -15px;
-  margin-left: -15px; }
+  position: relative; }
 
 .l-grid,
 .l-grid:before,
@@ -636,14 +631,44 @@ img {
 .l-mainMenu--item {
   display: inline-block; }
 
-.btn--primary, .btn--blue, .btn--yellow, .btn--red, .btn--subscribe {
+.c-aboutTeam {
+  text-align: center;
+  margin-bottom: 30px; }
+  .c-aboutTeam__picture {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px; }
+  .c-aboutTeam__name {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 11px;
+    color: #000; }
+  .c-aboutTeam__role {
+    font-size: 15px;
+    font-weight: 100;
+    color: #999;
+    margin-bottom: 5px; }
+  .c-aboutTeam__socialIcons {
+    display: inline-block; }
+  .c-aboutTeam__socialIcons {
+    display: inline-block;
+    margin: 0 2px; }
+    .c-aboutTeam__socialIcons .fa {
+      color: #FFF;
+      background-color: #333333;
+      border-radius: 50%;
+      padding: 3px;
+      font-size: 14px; }
+
+.btn--primary, .btn--blue, .btn--subscribe, .btn--contact {
   color: white;
   padding: 5px 10px;
   text-align: center;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-decoration: none; }
 
 .btn--primary {
   background: #02B89A; }
@@ -659,19 +684,8 @@ img {
   .btn--blue:active {
     background: #16527a; }
 
-.btn--yellow {
-  background: #f1c40f; }
-  .btn--yellow:hover {
-    background: #cba50c; }
-  .btn--yellow:active {
-    background: #796307; }
-
-.btn--red {
-  background: #e74c3c; }
-  .btn--red:hover {
-    background: #df2e1b; }
-  .btn--red:active {
-    background: #921e12; }
+.btn--block {
+  width: 100%; }
 
 .btn--subscribe {
   background: #02B89A;
@@ -683,6 +697,23 @@ img {
   .btn--subscribe:hover {
     background: #029078; }
   .btn--subscribe:active {
+    background: #013a30; }
+
+.btn--contact {
+  background: #02B89A;
+  padding: 0px 5%;
+  padding: 9.5px 10px;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none; }
+  .btn--contact:hover {
+    background: #029078; }
+  .btn--contact:active {
     background: #013a30; }
 
 .btn--join a {
@@ -719,7 +750,8 @@ img {
           width: 90%; } }
   .c-primaryFooter--description {
     font-size: 14px;
-    color: #adadad; }
+    color: #adadad;
+    margin-bottom: 10px; }
   .c-primaryFooter--socialLinksMenu__item {
     display: inline-block;
     margin-right: 5px;
@@ -739,7 +771,7 @@ img {
 
 .c-secondaryFooter {
   background-color: #3e4653;
-  padding: 23px 0;
+  padding: 18px 0 23px 0;
   text-align: center; }
   @media (min-width: 767px) {
     .c-secondaryFooter {
@@ -753,17 +785,20 @@ img {
   .c-secondaryFooter--legalLinks__item {
     display: inline-block;
     padding: 0 5px; }
-    .c-secondaryFooter--legalLinks__item a {
-      color: #02B89A;
-      text-decoration: none; }
-      @media (min-width: 767px) {
-        .c-secondaryFooter--legalLinks__item a {
-          padding-right: 10px; } }
+    @media (min-width: 580px) {
+      .c-secondaryFooter--legalLinks__item {
+        padding: 0 5px 0; } }
+    @media (min-width: 767px) {
+      .c-secondaryFooter--legalLinks__item {
+        padding: 0 7px 0 0; } }
+  .c-secondaryFooter--legalLinks a {
+    color: #02B89A;
+    text-decoration: none; }
   @media (min-width: 767px) {
     .c-secondaryFooter--copyright {
       float: right;
       color: #adadad;
-      padding: 0 30px; } }
+      padding: 0 10px; } }
 
 .form-control, .form-control--left {
   color: #666;
@@ -778,9 +813,47 @@ img {
 .form-control--left {
   color: #666;
   float: left; }
+.form-control--contact {
+  padding: 15px 12px;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  background-color: #efefef;
+  font-family: Proxima Nova;
+  font-weight: 300;
+  margin: 18px 0; }
+.form-control--textarea {
+  height: 112px; }
 
 .form-group {
   width: auto; }
+
+.c-landing-page {
+  text-align: center;
+  padding: 32px 0 41px 0; }
+  @media (min-width: 767px) {
+    .c-landing-page {
+      padding-top: 55px;
+      padding-bottom: 85px; } }
+  .c-landing-page__header {
+    color: #02B89A;
+    font-size: 29px;
+    text-transform: uppercase; }
+    @media (min-width: 580px) {
+      .c-landing-page__header {
+        font-size: 34px; } }
+    @media (min-width: 767px) {
+      .c-landing-page__header {
+        font-size: 38px; } }
+  .c-landing-page__sub-header {
+    color: #8e8e8e;
+    font-weight: 300;
+    font-size: 14px; }
+    @media (min-width: 580px) {
+      .c-landing-page__sub-header {
+        font-size: inherit; } }
 
 .c-mainNavigationPanel {
   line-height: 2.4em; }
@@ -835,8 +908,7 @@ img {
     @media (min-width: 767px) {
       .c-mainNavigationPanel--menuAccount {
         display: block;
-        float: right;
-        padding-right: 21px; } }
+        float: right; } }
 
 @media (min-width: 767px) {
   .c-mainNavigationPanel__item, .c-mainNavigationPanel__item--active {
@@ -887,6 +959,48 @@ img {
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center; }
+
+.c-aboutTeam {
+  text-align: center;
+  margin-bottom: 30px; }
+  .c-aboutTeam__picture {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px; }
+  .c-aboutTeam__name {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 11px;
+    color: #000; }
+  .c-aboutTeam__role {
+    font-size: 15px;
+    font-weight: 100;
+    color: #999;
+    margin-bottom: 5px; }
+  .c-aboutTeam__socialIcons {
+    display: inline-block; }
+  .c-aboutTeam__socialIcons {
+    display: inline-block;
+    margin: 0 2px; }
+    .c-aboutTeam__socialIcons .fa {
+      color: #FFF;
+      background-color: #333333;
+      border-radius: 50%;
+      padding: 3px;
+      font-size: 14px; }
+
+.c-faq__category-question {
+  margin-bottom: 20px; }
+.c-faq__category-section {
+  margin: 40px 0; }
+.c-faq__answer {
+  margin: 0 0 13px 0;
+  border-bottom: 1px solid #ececec;
+  padding: 15px 0; }
+  .c-faq__answer:last-child {
+    border-bottom: none; }
+.c-faq__category-title {
+  font-size: 1.75em; }
 
 .is-desktop-hide {
   display: block; }
