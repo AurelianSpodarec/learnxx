@@ -1,0 +1,72 @@
+// ==========================================================================
+// #Jobs Page
+//===========================================================================
+
+
+//Jobs Page
+.c-jobsPage {
+
+	@include e(category) {
+		margin-bottom: 80px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include e(categoryTitle) {
+		font-weight: $font-weight--medium;
+		font-size: 33px;
+		font-family: $font-family--primary;
+	    color: $primary-text-color;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    margin-bottom: 5px;
+	    font-weight: $font-weight--thick;
+	    position: relative;
+	}
+
+	@include e(post) {
+		position: relative;
+		margin-bottom: 30px;
+		font-family: $font-family--secondary;
+		&:hover .c-jobsPage__jobTitle{
+			color: $brand-color;
+		}
+	}
+
+	@include e(jobTitle) {
+		font-size: 23px;
+	    margin-right: 115px;
+	    overflow: hidden;
+	    color: darken($secondary-text-color, 30%);
+	}
+
+	@include e(postCategories) {
+		@include e(link) {
+			display: inline-block;
+			color: darken($secondary-text-color, 5%);
+			text-transform: uppercase;
+			margin-right: 7px;
+		    font-size: 12px;
+		}
+	}
+
+
+	@include m(postHeadline) {
+		float: left;
+		text-align: left;
+	}
+
+
+}
+
+.horizontal-line {
+    margin: 10px 0 25px 0;
+    width: 80px;
+    height: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.vertical-line, .horizontal-line {
+    border-color: #e2e2e2;
+}

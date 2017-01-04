@@ -1,12 +1,11 @@
 // ==========================================================================
-// c-downolad-app-section
+// #App Page
 // ==========================================================================
 
 .c-downoladAppSection {
 
 	@include e(learnX) {
 		text-align: center;
-
 		@include mq(medium-up) {
 			text-align: left;
 			margin-top: 50px;
@@ -15,18 +14,16 @@
 	}
 
 	@include e(learnX-heading) {
-		font-size: 3.0625em;
-	    color: #02B89A;
+		font-size: 2.6625em;
+	    color: $brand-color;
 	    text-transform: uppercase;
 	    @include mq(medium-up) {
 			font-size: 3.0625em;
-    		color: #02B89A;
     	}
 	}
 
 	@include e(learnX-desc) {
-		margin-bottom: 10px;
-    	color: #adadad;
+		margin-bottom: 18px;
 	}
 
 	@include e(mobile) {
@@ -35,12 +32,24 @@
 	}
 
 	@include e(heading-desc) {
-		font-weight: 700;
-	    color: #efefef;
+		font-weight: $font-weight--medium;
 	    padding-bottom: 13px;
+	    color: lighten(	$secondary-text-color, 30%);
 	    font-size: 20px;
-	    margin: 0 auto;	width: 50%;
+	    margin: 0 auto;	
+	    width: 50%;
+	    margin-bottom: 10px;
 	}
+
+	
 
 }
 
+
+.androidFace {
+    background-image: url(../assets/img/android.png);
+}
+
+.androidFace--invert {
+    background-image: url(../assets/img/android2.png);
+}

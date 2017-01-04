@@ -7,6 +7,12 @@
 	//Questions
 	@include e(category-question) {
 		margin-bottom: 20px;
+		list-style: ideograph-numeric;
+		list-style-position: inside;
+		padding: 0;
+		a {
+			color: $brand-color;
+		}
 	}
 
 	@include e(question) {

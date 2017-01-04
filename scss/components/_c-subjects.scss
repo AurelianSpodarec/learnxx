@@ -41,8 +41,8 @@
 	@include e(title) {
 		color: #02B89A;
 	    font-size: 18px;
-	    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-	    font-weight: bold;
+	    font-family: $font-family--primary;
+	    font-weight:$font-weight--thick;
 	    text-align: center;
 	}
 

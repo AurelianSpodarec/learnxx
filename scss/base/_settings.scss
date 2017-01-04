@@ -10,45 +10,24 @@ $font-url--proximanova		    : "fonts/proximanova/proximanova.css";
 $font-family--primary    	: 'Proxima Nova', Helvetica, Arial, sans-serif !default;
 $font-family--secondary  	: 'Roboto', Helvetica, Arial, sans-serif !default;
 
-
-
 // List maps = color palette
 
 $global-weight-normal: normal !default;
 
-
-
 // Font Weights
 
-$font-weight--thin       : 100;
-$font-weight--light      : 300;
-$font-weight--medium     : 400;
-$font-weight--bold       : 700;
-$font-weight--ultra-bold : 900;
-
-
-
-/*
-
-Brand color - #02b89a; //Green:
-Headlines,
-Buttons,
-
-Header - #585e69; //Light 
-
-*/
-
-
+$font-weight--normal : normal;
+$font-weight--medium : 700;
+$font-weight--thick : bold;
 
 // Descriptive Base Colors
 $primary-text-color   : #4A4A4A; // Body's default color
-$secondary-text-color : lighten($primary-text-color, 40%); //e.g Question1
+$secondary-text-color : lighten($primary-text-color, 40%);
 
 
-$persian-green  : #02B89A;  //green
-$tundora		: #4A4A4A;  //grey
-$silver-chalice : #a2a2a2;  //light grey e.g. 15% lighter than tundora
-
+$persian-green  : #02B89A;
+$tundora		: #909090; 
+$silver-chalice : #a2a2a2; 
 $shuttle-gray   : #585E69;
 
 
@@ -61,24 +40,22 @@ $persian-green  : #02B89A;
 $wild-sand		: #F4F4F4;
 $scorpion 		: #585858;
 
-
 // Color Usage
 
 $brand-color 	: $persian-green; 
 
 $primary-text   : $tundora;
-$secondary-text : $silver-chalice; //light grey
+$secondary-text : $silver-chalice;
 
 
 
 $navigation 	: #434343;
-
-$header 		: #f4f4f4; //grey 
+$header 		: #f4f4f4; 
 
 $header-invert 	: $shuttle-gray;
-$footer 		: $shuttle-gray;
+$primary-footer : $shuttle-gray;
 
-$bottom-footer  : #3e4653;
+$secondary-footer  : #3e4653;
 
 
 
@@ -145,6 +122,7 @@ $body__font-family: $font-family--primary;
 $body__background : white;
 $body__color	  : $primary-text-color;
 $body__antialiased: true !default;
+
 // Border radius
 
 $br--default    : .4em;

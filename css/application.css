@@ -1,12 +1,3 @@
-/*
-
-Brand color - #02b89a; //Green:
-Headlines,
-Buttons,
-
-Header - #585e69; //Light 
-
-*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -466,6 +457,9 @@ a {
   src: url(../fonts/proximanova/proximanova-semibold-webfont.ttf);
   font-family: Proxima Nova;
   font-weight: 600; }
+.headline-special {
+  color: #02B89A; }
+
 .l-clearfix:after {
   content: "";
   display: table;
@@ -491,8 +485,18 @@ a {
     .l-section-block {
       padding: 60px 0; } }
 
+.l-small-section {
+  margin: 45px 0; }
+
 .l-align-center {
   text-align: center; }
+
+.l-aling-right {
+  float: right; }
+
+.l-list-inside-np {
+  list-style-position: inside;
+  padding: 0; }
 
 .bg--prim {
   background-color: #02B89A; }
@@ -646,6 +650,103 @@ a {
 .l-mainMenu--item {
   display: inline-block; }
 
+.c-downoladAppSection__learnX {
+  text-align: center; }
+  @media (min-width: 767px) {
+    .c-downoladAppSection__learnX {
+      text-align: left;
+      margin-top: 50px;
+      margin-left: 60px; } }
+.c-downoladAppSection__learnX-heading {
+  font-size: 2.6625em;
+  color: #02B89A;
+  text-transform: uppercase; }
+  @media (min-width: 767px) {
+    .c-downoladAppSection__learnX-heading {
+      font-size: 3.0625em; } }
+.c-downoladAppSection__learnX-desc {
+  margin-bottom: 18px; }
+.c-downoladAppSection__mobile {
+  max-width: 200px;
+  margin-left: 120px; }
+.c-downoladAppSection__heading-desc {
+  font-weight: 700;
+  padding-bottom: 13px;
+  color: #fdfdfd;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 10px; }
+
+.androidFace {
+  background-image: url(../assets/img/android.png); }
+
+.androidFace--invert {
+  background-image: url(../assets/img/android2.png); }
+
+.c-faq__category-question {
+  margin-bottom: 20px;
+  list-style: ideograph-numeric;
+  list-style-position: inside;
+  padding: 0; }
+  .c-faq__category-question a {
+    color: #02B89A; }
+.c-faq__category-section {
+  margin: 40px 0; }
+.c-faq__answer {
+  margin: 0 0 13px 0;
+  border-bottom: 1px solid #ececec;
+  padding: 15px 0; }
+  .c-faq__answer:last-child {
+    border-bottom: none; }
+.c-faq__category-title {
+  font-size: 1.75em; }
+
+.c-jobsPage__category {
+  margin-bottom: 80px; }
+  .c-jobsPage__category:last-child {
+    margin-bottom: 0; }
+.c-jobsPage__categoryTitle {
+  font-weight: 700;
+  font-size: 33px;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  position: relative; }
+.c-jobsPage__post {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  .c-jobsPage__post:hover .c-jobsPage__jobTitle {
+    color: #02B89A; }
+.c-jobsPage__jobTitle {
+  font-size: 23px;
+  margin-right: 115px;
+  overflow: hidden;
+  color: #646464; }
+.c-jobsPage__postCategories__link {
+  display: inline-block;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  margin-right: 7px;
+  font-size: 12px; }
+.c-jobsPage--postHeadline {
+  float: left;
+  text-align: left; }
+
+.horizontal-line {
+  margin: 10px 0 25px 0;
+  width: 80px;
+  height: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.vertical-line, .horizontal-line {
+  border-color: #e2e2e2; }
+
 .c-aboutTeam {
   text-align: center;
   margin-bottom: 30px; }
@@ -669,11 +770,54 @@ a {
     display: inline-block;
     margin: 0 2px; }
     .c-aboutTeam__socialIcons .fa {
-      color: #FFF;
-      background-color: #333333;
+      color: #fff;
+      background-color: #333;
       border-radius: 50%;
       padding: 3px;
       font-size: 14px; }
+
+.c-blogPostCard {
+  border-bottom: 1px solid #CCC;
+  padding: 40px 0; }
+  .c-blogPostCard__imgWrap {
+    max-height: 300px;
+    overflow: hidden;
+    position: relative; }
+    @media (min-width: 767px) {
+      .c-blogPostCard__imgWrap {
+        float: left;
+        max-width: 400px;
+        max-height: 227px;
+        width: 37%; } }
+  @media (min-width: 767px) {
+    .c-blogPostCard__img {
+      background: center center;
+      background-attachment: cover; } }
+  @media (min-width: 767px) {
+    .c-blogPostCard__content {
+      float: left;
+      width: 63%;
+      padding-left: 40px; } }
+  .c-blogPostCard__header {
+    color: #909090; }
+    .c-blogPostCard__header a {
+      color: #02B89A; }
+  .c-blogPostCard__description {
+    padding: 10px 0 12px 0; }
+
+.c-blogPost__imgWrap {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative; }
+  @media (min-width: 767px) {
+    .c-blogPost__imgWrap {
+      background-size: cover;
+      width: 100%;
+      background: center center; } }
+@media (min-width: 767px) {
+  .c-blogPost__img {
+    background: center center;
+    background-size: cover; } }
 
 .btn--primary, .btn--success, .btn--subscribe, .btn--contact {
   color: white;
@@ -686,55 +830,55 @@ a {
   text-decoration: none; }
 
 .btn--primary {
-  background: #02B89A; }
+  background-color: #02B89A; }
   .btn--primary:hover {
-    background: #029078; }
+    background-color: #029078; }
   .btn--primary:active {
-    background: #013a30; }
+    background-color: #013a30; }
 
 .btn--success {
-  background: #02B89A;
+  background-color: #02B89A;
   font-size: 1em;
   border: 1px solid #02B89A;
   border-radius: 16px;
   color: white;
   padding: 5px 30px; }
   .btn--success:hover {
-    background: #029078; }
+    background-color: #029078; }
   .btn--success:active {
-    background: #013a30; }
+    background-color: #013a30; }
 
 .btn--block {
   width: 100%; }
 
 .btn--subscribe {
-  background: #02B89A;
+  background-color: #02B89A;
   background: #02B89A;
   padding: 9.2px 12px;
   margin-left: -1px;
   float: left;
   width: auto; }
   .btn--subscribe:hover {
-    background: #029078; }
+    background-color: #029078; }
   .btn--subscribe:active {
-    background: #013a30; }
+    background-color: #013a30; }
 
 .btn--contact {
-  background: #02B89A;
+  background-color: #02B89A;
   padding: 0px 5%;
   padding: 9.5px 10px;
   margin: 0;
   cursor: pointer;
   display: inline-block;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-decoration: none; }
   .btn--contact:hover {
-    background: #029078; }
+    background-color: #029078; }
   .btn--contact:active {
-    background: #013a30; }
+    background-color: #013a30; }
 
 .btn--join a {
   border: 1px solid #02B89A;
@@ -748,14 +892,42 @@ a {
   right: 0px;
   text-align: right; }
 
+.btn--downoladAndroid, .btn--downoladAndroid--invert {
+  color: #fff;
+  background-color: #02B89A;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 4px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding: 10px 14px;
+  padding-left: 50px; }
+
+.btn--downoladAndroid {
+  background-color: #02B89A; }
+  .btn--downoladAndroid:hover {
+    background-color: #029078; }
+  .btn--downoladAndroid:active {
+    background-color: #013a30; }
+  .btn--downoladAndroid--invert {
+    background-color: white;
+    color: #02B89A;
+    margin-bottom: 20px;
+    background-color: white; }
+    .btn--downoladAndroid--invert:hover {
+      background-color: #ebebeb; }
+    .btn--downoladAndroid--invert:active {
+      background-color: #bfbfbf; }
+
 .c-primaryFooter {
-  background-color: #585e69;
+  background-color: #585E69;
   padding: 40px 0 20px 0; }
   @media (min-width: 580px) {
     .c-primaryFooter {
       padding: 50px 0 40px 0; } }
   .c-primaryFooter--heading {
-    color: #efefef;
+    color: white;
     font-family: Proxima Nova;
     font-size: 20px;
     font-weight: 300;
@@ -773,7 +945,7 @@ a {
       background-color: #fff; }
   .c-primaryFooter--description {
     font-size: 14px;
-    color: #adadad;
+    color: white;
     margin-bottom: 10px; }
   .c-primaryFooter--socialLinksMenu__item {
     display: inline-block;
@@ -784,7 +956,7 @@ a {
     font-size: 1.25em;
     text-align: center;
     margin-bottom: 10px;
-    background-color: #dacdcd; }
+    background-color: #f6f6f6; }
     .c-primaryFooter--socialLinksMenu__item a {
       color: #585e69; }
   .c-primaryFooter--subscribeForm {
@@ -822,7 +994,7 @@ a {
   @media (min-width: 767px) {
     .c-secondaryFooter--copyright {
       float: right;
-      color: #adadad;
+      color: #909090;
       padding: 0 20px; } }
 
 .form-control, .form-control--left {
@@ -858,7 +1030,7 @@ a {
 .c-landing-page {
   text-align: center;
   position: relative;
-  padding: 32px 0 41px 0; }
+  padding: 32px 20px 41px 20px; }
   @media (min-width: 767px) {
     .c-landing-page {
       padding-top: 55px;
@@ -874,7 +1046,7 @@ a {
       .c-landing-page__header {
         font-size: 38px; } }
   .c-landing-page__sub-header {
-    color: #8e8e8e;
+    color: #a2a2a2;
     font-weight: 300;
     font-size: 14px; }
     @media (min-width: 580px) {
@@ -945,23 +1117,23 @@ a {
     display: inline-block; } }
 
 .c-mainNavigationPanel__item a, .c-mainNavigationPanel__item--active a {
-  color: #efefef;
   padding: 10px 14px;
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
-  display: block; }
+  display: block;
+  color: #fff; }
   @media (min-width: 767px) {
     .c-mainNavigationPanel__item a, .c-mainNavigationPanel__item--active a {
-      color: #434343;
       padding: 0 0 0 20px;
-      display: inline; } }
+      display: inline;
+      color: #434343; } }
 
 .c-mainNavigationPanel__item a:hover, .c-mainNavigationPanel__item--active a {
-  color: #02b89a; }
+  color: #02B89A; }
 
 .c-subject__wrapper {
   align-items: center;
@@ -989,119 +1161,6 @@ a {
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center; }
-
-.c-aboutTeam {
-  text-align: center;
-  margin-bottom: 30px; }
-  .c-aboutTeam__picture {
-    border-radius: 50%;
-    width: 160px;
-    height: 160px; }
-  .c-aboutTeam__name {
-    font-size: 25px;
-    font-weight: 100;
-    margin-top: 11px;
-    color: #000; }
-  .c-aboutTeam__role {
-    font-size: 15px;
-    font-weight: 100;
-    color: #999;
-    margin-bottom: 5px; }
-  .c-aboutTeam__socialIcons {
-    display: inline-block; }
-  .c-aboutTeam__socialIcons {
-    display: inline-block;
-    margin: 0 2px; }
-    .c-aboutTeam__socialIcons .fa {
-      color: #FFF;
-      background-color: #333333;
-      border-radius: 50%;
-      padding: 3px;
-      font-size: 14px; }
-
-.c-faq__category-question {
-  margin-bottom: 20px; }
-.c-faq__category-section {
-  margin: 40px 0; }
-.c-faq__answer {
-  margin: 0 0 13px 0;
-  border-bottom: 1px solid #ececec;
-  padding: 15px 0; }
-  .c-faq__answer:last-child {
-    border-bottom: none; }
-.c-faq__category-title {
-  font-size: 1.75em; }
-
-.c-blogPostCard {
-  border-bottom: 1px solid #CCC;
-  padding: 40px 0; }
-  .c-blogPostCard__imgWrap {
-    max-height: 300px;
-    overflow: hidden;
-    position: relative; }
-    @media (min-width: 767px) {
-      .c-blogPostCard__imgWrap {
-        float: left;
-        max-width: 400px;
-        max-height: 227px;
-        width: 37%; } }
-  @media (min-width: 767px) {
-    .c-blogPostCard__img {
-      background: center center;
-      background-attachment: cover; } }
-  @media (min-width: 767px) {
-    .c-blogPostCard__content {
-      float: left;
-      width: 63%;
-      padding-left: 40px; } }
-  .c-blogPostCard__description {
-    padding: 10px 0 12px 0; }
-
-.c-blogPost__imgWrap {
-  max-height: 300px;
-  overflow: hidden;
-  position: relative; }
-  @media (min-width: 767px) {
-    .c-blogPost__imgWrap {
-      background-size: cover;
-      width: 100%;
-      background: center center; } }
-@media (min-width: 767px) {
-  .c-blogPost__img {
-    background: center center;
-    background-size: cover; } }
-
-.c-downoladAppSection__learnX {
-  text-align: center; }
-  @media (min-width: 767px) {
-    .c-downoladAppSection__learnX {
-      text-align: left;
-      margin-top: 50px;
-      margin-left: 60px; } }
-.c-downoladAppSection__learnX-heading {
-  font-size: 3.0625em;
-  color: #02B89A;
-  text-transform: uppercase; }
-  @media (min-width: 767px) {
-    .c-downoladAppSection__learnX-heading {
-      font-size: 3.0625em;
-      color: #02B89A; } }
-.c-downoladAppSection__learnX-desc {
-  margin-bottom: 10px;
-  color: #adadad; }
-.c-downoladAppSection__mobile {
-  max-width: 200px;
-  margin-left: 120px; }
-.c-downoladAppSection__heading-desc {
-  font-weight: 700;
-  color: #efefef;
-  padding-bottom: 13px;
-  font-size: 20px;
-  margin: 0 auto;
-  width: 50%; }
-
-.c-jobsPage__postCategories__link {
-  display: inline-block; }
 
 .is-desktop-hide {
   display: block; }

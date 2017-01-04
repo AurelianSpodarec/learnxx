@@ -8,6 +8,7 @@
 	padding: 40px 0; 
 
 
+
 	@include e(imgWrap) {
 		max-height: 300px;
 		overflow: hidden;
@@ -36,7 +37,10 @@
 	}
 
 	@include e(header) {
-		
+		color: $primary-text;
+		a {
+			color: $brand-color;
+		}
 	}
 
 	@include e(info) {

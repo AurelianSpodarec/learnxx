@@ -5,7 +5,7 @@
 .c-landing-page {
 	text-align: center;
 	position: relative;
-	padding: 32px 0 41px 0;
+	padding: 32px 20px 41px 20px;
 
 	@include mq(medium-up) {
 		padding-top: 55px;
@@ -25,7 +25,7 @@
 	}
 
 	@include e(sub-header) {
-		color: #8e8e8e;
+		color: $secondary-text;
 		font-weight: 300;
 		font-size: 14px;
 		@include mq(small-up) {
