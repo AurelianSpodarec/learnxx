@@ -38,6 +38,7 @@
 
 	@include e(header) {
 		color: $primary-text;
+		margin: .3em 0;
 		a {
 			color: $brand-color;
 		}
@@ -52,11 +53,21 @@
 	}
 
 	@include e(title) {
-		
+		line-height: 1em;
+		margin: .2em 0 0 0;
+		font-size: 1.85em;
+		a {
+			color: darken($primary-text, 20%);
+		}
+
+		@include mq(medium-up) {
+			font-size: 2.1em;
+		}
 	}
 
 	@include e(description) {
 		padding: 10px 0 12px 0;
+		text-align: justify;
 	}
 
 
@@ -65,7 +76,7 @@
 //Blog Post
 
 .c-blogPost {
-
+	margin: 20px 0;
 	@include e(imgWrap) {
 		max-height: 300px;
 		overflow: hidden;
