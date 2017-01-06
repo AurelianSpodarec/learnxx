@@ -15,7 +15,7 @@
 
 	@include e(categoryTitle) {
 		font-weight: $font-weight--medium;
-		font-size: 33px;
+		font-size: 27px;
 		font-family: $font-family--primary;
 	    color: $primary-text-color;
 	    text-transform: uppercase;
@@ -23,6 +23,9 @@
 	    margin-bottom: 5px;
 	    font-weight: $font-weight--thick;
 	    position: relative;
+	    @include mq(medium-up) {
+			font-size: 33px;
+		}
 	}
 
 	@include e(post) {
@@ -35,10 +38,14 @@
 	}
 
 	@include e(jobTitle) {
-		font-size: 23px;
-	    margin-right: 115px;
-	    overflow: hidden;
-	    color: darken($secondary-text-color, 30%);
+		font-size: 19px;
+		color: darken($secondary-text-color, 30%);
+		overflow: hidden;
+		margin-right: 115px;
+		@include mq(medium-up) {
+			font-size: 23px;
+		}
+
 	}
 
 	@include e(postCategories) {
@@ -47,7 +54,10 @@
 			color: darken($secondary-text-color, 5%);
 			text-transform: uppercase;
 			margin-right: 7px;
-		    font-size: 12px;
+		    font-size: 11px;
+		    @include mq(medium-up) {
+				font-size: 13px;
+			}
 		}
 	}
 

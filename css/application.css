@@ -711,7 +711,7 @@ a {
     margin-bottom: 0; }
 .c-jobsPage__categoryTitle {
   font-weight: 700;
-  font-size: 33px;
+  font-size: 27px;
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   color: #4A4A4A;
   text-transform: uppercase;
@@ -719,6 +719,9 @@ a {
   margin-bottom: 5px;
   font-weight: bold;
   position: relative; }
+  @media (min-width: 767px) {
+    .c-jobsPage__categoryTitle {
+      font-size: 33px; } }
 .c-jobsPage__post {
   position: relative;
   margin-bottom: 30px;
@@ -726,16 +729,22 @@ a {
   .c-jobsPage__post:hover .c-jobsPage__jobTitle {
     color: #02B89A; }
 .c-jobsPage__jobTitle {
-  font-size: 23px;
-  margin-right: 115px;
+  font-size: 19px;
+  color: #646464;
   overflow: hidden;
-  color: #646464; }
+  margin-right: 115px; }
+  @media (min-width: 767px) {
+    .c-jobsPage__jobTitle {
+      font-size: 23px; } }
 .c-jobsPage__postCategories__link {
   display: inline-block;
   color: #a3a3a3;
   text-transform: uppercase;
   margin-right: 7px;
-  font-size: 12px; }
+  font-size: 11px; }
+  @media (min-width: 767px) {
+    .c-jobsPage__postCategories__link {
+      font-size: 13px; } }
 .c-jobsPage--postHeadline {
   float: left;
   text-align: left; }
@@ -1089,7 +1098,10 @@ ul.tab li a:focus, .active {
   height: 112px; }
 
 .form-group {
-  width: auto; }
+  width: 100%; }
+  @media (min-width: 580px) {
+    .form-group {
+      width: auto; } }
 
 .c-landing-page {
   text-align: center;
