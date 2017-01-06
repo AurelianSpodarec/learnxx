@@ -63,8 +63,22 @@
 
 
 	@include m(postHeadline) {
-		float: left;
-		text-align: left;
+			text-align: center;
+
+		@include mq(small-up) {
+			float: left;
+			text-align: left;
+		}
+	}
+
+	@include m(postApplyButton) {
+		text-align: center;
+		margin-top: 7px;
+		@include mq(small-up) {
+			float: right;
+			margin-top: 0;
+			
+		}
 	}
 
 

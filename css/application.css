@@ -746,8 +746,18 @@ a {
     .c-jobsPage__postCategories__link {
       font-size: 13px; } }
 .c-jobsPage--postHeadline {
-  float: left;
-  text-align: left; }
+  text-align: center; }
+  @media (min-width: 580px) {
+    .c-jobsPage--postHeadline {
+      float: left;
+      text-align: left; } }
+.c-jobsPage--postApplyButton {
+  text-align: center;
+  margin-top: 7px; }
+  @media (min-width: 580px) {
+    .c-jobsPage--postApplyButton {
+      float: right;
+      margin-top: 0; } }
 
 .horizontal-line {
   margin: 10px 0 25px 0;
