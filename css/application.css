@@ -460,6 +460,9 @@ a {
 .headline-special {
   color: #02B89A; }
 
+.headline-margin--medium {
+  margin-bottom: 25px; }
+
 .l-clearfix:after {
   content: "";
   display: table;
