@@ -1123,7 +1123,7 @@ ul.tab li a:focus, .active {
       padding-bottom: 85px; } }
   .c-landing-page__header {
     color: #02B89A;
-    font-size: 29px;
+    font-size: 24px;
     text-transform: uppercase; }
     @media (min-width: 580px) {
       .c-landing-page__header {

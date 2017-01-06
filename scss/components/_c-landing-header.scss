@@ -14,7 +14,7 @@
 
 	@include e(header) {
 		color: $brand-color;
-		font-size: 29px;
+		font-size: 24px;
 		text-transform: uppercase;
 		@include mq(small-up) {
 			font-size: 34px;
