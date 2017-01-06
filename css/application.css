@@ -489,7 +489,7 @@ a {
       padding: 60px 0; } }
 
 .l-small-section {
-  margin: 45px 0; }
+  margin: 25px 0; }
 
 .l-align-center {
   text-align: center; }
@@ -758,6 +758,8 @@ a {
     .c-jobsPage--postApplyButton {
       float: right;
       margin-top: 0; } }
+  .c-jobsPage--postApplyButton--bottom {
+    text-align: center; }
 
 .horizontal-line {
   margin: 10px 0 25px 0;
@@ -971,7 +973,14 @@ ul.tab li a:focus, .active {
   position: absolute;
   top: 0px;
   right: 0px;
-  text-align: right; }
+  text-align: right;
+  font-size: .8em; }
+  @media (min-width: 580px) {
+    .btn--jobsPage-apply {
+      font-size: .9em; } }
+  @media (min-width: 767px) {
+    .btn--jobsPage-apply {
+      font-size: 1em; } }
 
 .btn--downoladAndroid, .btn--downoladAndroid--invert {
   color: #fff;
@@ -1108,7 +1117,7 @@ ul.tab li a:focus, .active {
   height: 112px; }
 
 .form-group {
-  width: 100%; }
+  width: 50%; }
   @media (min-width: 580px) {
     .form-group {
       width: auto; } }

@@ -142,6 +142,13 @@
     top: 0px;
     right: 0px;
     text-align: right;
+    font-size: .8em;
+    @include mq(small-up) {
+        font-size: .9em;
+    }
+    @include mq(medium-up) {
+        font-size: 1em;
+    }
 }
 
 %brn-downoladAndroid {

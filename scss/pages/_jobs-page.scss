@@ -79,6 +79,10 @@
 			margin-top: 0;
 			
 		}
+
+		@include m(bottom) {
+			text-align: center;
+		}
 	}
 
 

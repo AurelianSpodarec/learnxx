@@ -42,7 +42,7 @@
 
 
 .form-group {
-    width: 100%;
+    width: 50%;
     @include mq(small-up) {
 	   width: auto;
     }
