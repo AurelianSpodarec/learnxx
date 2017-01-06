@@ -46,4 +46,18 @@
     @include mq(small-up) {
 	   width: auto;
     }
+
+    @include m(65) {
+        width: 65%;
+        @include mq(small-up) {
+           width: auto;
+        }
+    }
+
+    @include m(35) {
+        width: 35%;
+        @include mq(small-up) {
+           width: auto;
+        }
+    }
 }

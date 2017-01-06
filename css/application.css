@@ -1121,6 +1121,16 @@ ul.tab li a:focus, .active {
   @media (min-width: 580px) {
     .form-group {
       width: auto; } }
+  .form-group--65 {
+    width: 65%; }
+    @media (min-width: 580px) {
+      .form-group--65 {
+        width: auto; } }
+  .form-group--35 {
+    width: 35%; }
+    @media (min-width: 580px) {
+      .form-group--35 {
+        width: auto; } }
 
 .c-landing-page {
   text-align: center;
